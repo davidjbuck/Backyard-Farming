@@ -869,7 +869,7 @@ GameObject:
   - component: {fileID: 1046982336}
   - component: {fileID: 1046982335}
   m_Layer: 0
-  m_Name: TestCursor
+  m_Name: PlayerCursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -888,10 +888,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   child: {fileID: 107225584}
-  testObject: {fileID: 5253182257416337019, guid: b18b18a904be00d4ba33bc338bc54c86,
+  placedObject: {fileID: 4183929715424339879, guid: 1aa97fc82d8bb3c48ac243b57971da22,
     type: 3}
   raycastManager: {fileID: 388525033}
-  displayCursor: 0
+  soilPlaced: 0
 --- !u!4 &1046982336
 Transform:
   m_ObjectHideFlags: 0
