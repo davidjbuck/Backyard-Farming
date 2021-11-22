@@ -98,8 +98,9 @@ public class PlantScript : MonoBehaviour
         waterTimer = initialWaterTimer; // Resets water timer to prevent plant from wilting.
     }
 
-    void Harvest()
+    public KeyValuePair<int, float> Harvest()
     {
-        // Awards seeds and gold, then deletes crop object.
+        this.gameObject.SetActive(false);
+        return new KeyValuePair<int, float>(seedsDropped, sellValue); // Awards seeds and gold, then sets obj to inactive.
     }
 }
