@@ -8,6 +8,7 @@ public class ARCursor : MonoBehaviour
     public GameObject child;
     public GameObject placedObject;
     public ARRaycastManager raycastManager;
+    public ARPlaneManager planeManager;
     public bool soilPlaced = false;
 
     // Start is called before the first frame update
@@ -27,6 +28,7 @@ public class ARCursor : MonoBehaviour
             {             
                 GameObject.Instantiate(placedObject, objectsHit[0].pose.position, objectsHit[0].pose.rotation);
                 soilPlaced = true;
+                planeManager.enabled = false;
             }
         }
     }
